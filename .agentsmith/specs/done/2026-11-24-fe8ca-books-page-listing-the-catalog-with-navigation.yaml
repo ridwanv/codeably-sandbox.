@@ -1,0 +1,68 @@
+spec: 2026-11-24-fe8ca
+goal: Add a /books page listing the BookCatalog in a table, and Home/Books NavLink navigation in MainLayout
+repos:
+- codeably-sandbox
+scope:
+  in: Ticket 3, segments 1-4 (verbatim in 2026-11-24-fe8ca-books-page-listing-the-catalog-with-navigation.md)
+done:
+- '`/books` renders the table, or the empty-state text when there are no books'
+- MainLayout shows Home and Books links on every page
+- '`dotnet build` has no warnings; existing tests still pass'
+outcome:
+  run: 2026-11-24T16-19-13-870e
+  delivered: |-
+    ## What this spec delivers
+
+    **default**
+
+    <invoke name="write_file">
+    <parameter name="arguments">{"path":"codeably-sandbox/.agentsmith/runs/2026-11-24T16-19-13-870e/plan.md","content":"# Plan 2026-11-24-fe8ca\n\n- `src/ReadingList.Web/Components/Pages/Books.razor` (new): `/books` page, table of Title/Author/Pages in `BookCatalog.All()` order, or \"No books yet.\" when empty. Serves done line 1.\n- `src/ReadingList.Web/Components/Layout/MainLayout.razor`: nav with `NavLink` to `/` (Match=All) and `/books`. Serves done line 2.\n- `src/ReadingList.Web/Components/Layout/MainLayout.razor.css`: nav layout and active-link styling.\n- Done line 3: `dotnet build` (0 warnings) and `dotnet test` (5 passed) verified.\n"}</parameter>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+    </tool_calls>
+    </invoke>
+  hand_forward:
+    renamed: []
+    moved: []
+    persisted:
+    - "codeably-sandbox/.agentsmith/runs/2026-11-24T16-19-13-870e/plan.md"
+    deviations: []

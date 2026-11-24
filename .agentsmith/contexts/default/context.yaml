@@ -14,3 +14,8 @@ quality:
 sources:
 - src/ReadingList.Core
 - tests/ReadingList.Core.Tests
+
+state:
+  done:
+    2026-11-24-fe8ca: "Add a /books page listing the BookCatalog in a table, and Home/Books NavLink navigation in MainLayout -> .agentsmith/specs/done/2026-11-24-fe8ca-books-page-listing-the-catalog-with-navigation.yaml"
+  active: {}
