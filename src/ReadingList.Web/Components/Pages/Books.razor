@@ -1,10 +1,34 @@
 @page "/books"
+@rendermode InteractiveServer
 @using ReadingList.Core
+@using ReadingList.Web.Models
 @inject BookCatalog Catalog
 
 <PageTitle>Books</PageTitle>
 
 <h1>Books</h1>
+
+<EditForm Model="_model" OnValidSubmit="HandleValidSubmit" FormName="add-book">
+    <DataAnnotationsValidator />
+
+    <div>
+        <label for="title">Title</label>
+        <InputText id="title" @bind-Value="_model.Title" />
+        <ValidationMessage For="() => _model.Title" />
+    </div>
+    <div>
+        <label for="author">Author</label>
+        <InputText id="author" @bind-Value="_model.Author" />
+        <ValidationMessage For="() => _model.Author" />
+    </div>
+    <div>
+        <label for="pages">Pages</label>
+        <InputNumber id="pages" @bind-Value="_model.Pages" />
+        <ValidationMessage For="() => _model.Pages" />
+    </div>
+
+    <button type="submit">Add book</button>
+</EditForm>
 
 @if (_books.Count == 0)
 {
@@ -35,6 +59,14 @@ else
 
 @code {
     private IReadOnlyList<Book> _books = [];
+    private NewBookModel _model = new();
 
     protected override void OnInitialized() => _books = Catalog.All();
+
+    private void HandleValidSubmit()
+    {
+        Catalog.Add(_model.Title!, _model.Author!, _model.Pages!.Value);
+        _books = Catalog.All();
+        _model = new NewBookModel();
+    }
 }
