@@ -10,3 +10,18 @@ done:
 - Footer visible on every page with the current year
 - No `DateTime.Now`/`UtcNow` in the change
 - Test with a fixed TimeProvider passes
+outcome:
+  run: 2026-11-24T16-33-53-50a3
+  delivered: |-
+    ## What this spec delivers
+
+    **default**
+
+    <invoke name="read_file">
+    <parameter name="path">codeably-sandbox/.agentsmith/specs/done/2026-11-24-906fa-add-book-form-with-validation.yaml</parameter>
+    </invoke>
+    <invoke name="run_command">
+    <parameter name="repo">codeably-sandbox</parameter>
+    <parameter name="command">git status --short; grep -rnE "DateTime\.(Now|UtcNow)" src tests || echo "no DateTime.Now/UtcNow"; cat src/ReadingList.Web/Components/Layout/MainLayout.razor</parameter>
+    </invoke>
+  hand_forward: missing
