@@ -1,0 +1,16 @@
+meta:
+  workdir: src/ReadingList.Web
+  type:
+  - crud
+  purpose: Small in-memory reading-list web app built with Blazor Server; sample-scale code.
+stack:
+  lang: C#
+  image: mcr.microsoft.com/dotnet/sdk:10.0
+quality:
+  lang: english-only
+  naming: PascalCase types and members, file-scoped namespaces, sealed test classes
+  testing:
+    style: AAA
+sources:
+- src/ReadingList.Core
+- tests/ReadingList.Core.Tests
