@@ -1,0 +1,21 @@
+ticket: github-4
+ticket_pinned_whole: true
+specs:
+- 2026-11-24-906fa
+series_repos:
+- codeably-sandbox
+revisions:
+- number: 1
+  cause: initial derivation
+  at: 2026-11-24T16:26:31.2295780+00:00
+- number: 2
+  cause: 'revised in run 2026-11-24T16-25-37-6f26: No spec had been written; recorded the goal made concrete from reading Books.razor, BookCatalog and the test setup, with the done lines unchanged.'
+  at: 2026-11-24T16:27:39.1961799+00:00
+carried: []
+discarded: []
+unaccounted: []
+shared: []
+discarded_contexts: []
+handback_readings: []
+handback_taken: 0
+ticket_fingerprint: fb6675637023875d22f58fbd8f14ce973b2571811849276adcb1bbaf6b8115fc
