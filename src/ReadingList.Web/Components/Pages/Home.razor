@@ -1,0 +1,9 @@
+@page "/"
+@using ReadingList.Core
+@inject BookCatalog Catalog
+
+<PageTitle>Reading List</PageTitle>
+
+<h1>Reading List</h1>
+
+<p>You have @Catalog.All().Count book(s) on your list.</p>

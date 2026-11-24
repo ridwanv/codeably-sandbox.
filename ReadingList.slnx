@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ReadingList.Core/ReadingList.Core.csproj" />
+    <Project Path="src/ReadingList.Web/ReadingList.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ReadingList.Core.Tests/ReadingList.Core.Tests.csproj" />
+  </Folder>
+</Solution>

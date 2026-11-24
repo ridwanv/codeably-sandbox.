@@ -4,7 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sandbox.Core.Tests</RootNamespace>
+    <RootNamespace>ReadingList.Core.Tests</RootNamespace>
     <TargetFramework>net10.0</TargetFramework>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
   </PropertyGroup>
@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Sandbox.Core\Sandbox.Core.csproj" />
+    <ProjectReference Include="..\..\src\ReadingList.Core\ReadingList.Core.csproj" />
   </ItemGroup>
 
 </Project>
