@@ -17,6 +17,7 @@ sources:
 
 state:
   done:
+    2026-11-24-5b06a: "Show the current year in a footer using TimeProvider -> .agentsmith/specs/done/2026-11-24-5b06a-show-the-current-year-in-a-footer-using-timeprovid.yaml"
     2026-11-24-906fa: "Add an EditForm with DataAnnotations validation to /books that adds a book to the catalog and refreshes the list, covered by a new ReadingList.Web.Tests project (xUnit v3 + bUnit) -> .agentsmith/specs/done/2026-11-24-906fa-add-book-form-with-validation.yaml"
     2026-11-24-fe8ca: "Add a /books page listing the BookCatalog in a table, and Home/Books NavLink navigation in MainLayout -> .agentsmith/specs/done/2026-11-24-fe8ca-books-page-listing-the-catalog-with-navigation.yaml"
   active: {}
