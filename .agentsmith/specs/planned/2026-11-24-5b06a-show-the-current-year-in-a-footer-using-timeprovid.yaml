@@ -1,0 +1,12 @@
+spec: 2026-11-24-5b06a
+goal: Show the current year in a footer using TimeProvider
+repos:
+- codeably-sandbox
+scope:
+  in: Ticket 5, segment(s) 1, 2, 3, 4 — carried verbatim in 2026-11-24-5b06a-show-the-current-year-in-a-footer-using-timeprovid.md
+decisions:
+- key: Derived from ticket 5 by agent-smith. The verbatim naming rules, forbidden APIs and code templates this spec must honour are carried byte-identical in 2026-11-24-5b06a-show-the-current-year-in-a-footer-using-timeprovid.md — read it, never a summary of it.
+done:
+- Footer visible on every page with the current year
+- No `DateTime.Now`/`UtcNow` in the change
+- Test with a fixed TimeProvider passes

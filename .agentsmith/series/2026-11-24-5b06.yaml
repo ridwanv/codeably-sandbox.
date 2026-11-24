@@ -1,0 +1,20 @@
+ticket: github-5
+ticket_pinned_whole: true
+specs:
+- 2026-11-24-5b06a
+stand_ins:
+- 2026-11-24-5b06a
+series_repos:
+- codeably-sandbox
+revisions:
+- number: 1
+  cause: initial derivation
+  at: 2026-11-24T16:34:41.4831419+00:00
+carried: []
+discarded: []
+unaccounted: []
+shared: []
+discarded_contexts: []
+handback_readings: []
+handback_taken: 0
+ticket_fingerprint: c20fcd2234f17bc183207316cec8295b57376d1eb27c6d05f0c7b86d0ec04f1a
