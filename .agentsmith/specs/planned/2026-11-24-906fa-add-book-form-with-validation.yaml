@@ -1,0 +1,12 @@
+spec: 2026-11-24-906fa
+goal: Add-book form with validation
+repos:
+- codeably-sandbox
+scope:
+  in: Ticket 4, segment(s) 1, 2, 3, 4 — carried verbatim in 2026-11-24-906fa-add-book-form-with-validation.md
+decisions:
+- key: Derived from ticket 4 by agent-smith. The verbatim naming rules, forbidden APIs and code templates this spec must honour are carried byte-identical in 2026-11-24-906fa-add-book-form-with-validation.md — read it, never a summary of it.
+done:
+- Valid submissions appear in the list without a page reload
+- Invalid submissions show per-field messages and do not call the catalog
+- New bUnit tests pass; `dotnet test --solution ReadingList.slnx` is green
