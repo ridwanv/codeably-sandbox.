@@ -1,5 +1,5 @@
 spec: 2026-11-24-906fa
-goal: Add-book form with validation
+goal: Add an EditForm with DataAnnotations validation to /books that adds a book to the catalog and refreshes the list, covered by a new ReadingList.Web.Tests project (xUnit v3 + bUnit)
 repos:
 - codeably-sandbox
 scope:
