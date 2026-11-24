@@ -2,14 +2,15 @@ ticket: github-3
 ticket_pinned_whole: true
 specs:
 - 2026-11-24-fe8ca
-stand_ins:
-- 2026-11-24-fe8ca
 series_repos:
 - codeably-sandbox
 revisions:
 - number: 1
   cause: initial derivation
   at: 2026-11-24T16:21:04.2538263+00:00
+- number: 2
+  cause: 'revised in run 2026-11-24T16-19-13-870e: No spec was written for this ticket; recording the goal and done lines from the ticket and the code read (the schema rejects string steps).'
+  at: 2026-11-24T16:21:47.6818391+00:00
 carried: []
 discarded: []
 unaccounted: []
