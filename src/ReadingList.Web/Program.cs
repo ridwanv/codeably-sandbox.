@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddSingleton<BookCatalog>();
+builder.Services.AddSingleton(TimeProvider.System);
 
 var app = builder.Build();
 
