@@ -12,6 +12,17 @@
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+    nav ::deep a.active {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
     #blazor-error-ui .dismiss {
         cursor: pointer;
         position: absolute;

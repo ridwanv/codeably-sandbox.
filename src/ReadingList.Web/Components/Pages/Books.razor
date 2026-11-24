@@ -1,0 +1,40 @@
+@page "/books"
+@using ReadingList.Core
+@inject BookCatalog Catalog
+
+<PageTitle>Books</PageTitle>
+
+<h1>Books</h1>
+
+@if (_books.Count == 0)
+{
+    <p>No books yet.</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in _books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Pages</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IReadOnlyList<Book> _books = [];
+
+    protected override void OnInitialized() => _books = Catalog.All();
+}
