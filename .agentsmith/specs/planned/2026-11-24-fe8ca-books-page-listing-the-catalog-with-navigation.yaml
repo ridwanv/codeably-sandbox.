@@ -1,0 +1,12 @@
+spec: 2026-11-24-fe8ca
+goal: Books page listing the catalog, with navigation
+repos:
+- codeably-sandbox
+scope:
+  in: Ticket 3, segment(s) 1, 2, 3, 4 — carried verbatim in 2026-11-24-fe8ca-books-page-listing-the-catalog-with-navigation.md
+decisions:
+- key: Derived from ticket 3 by agent-smith. The verbatim naming rules, forbidden APIs and code templates this spec must honour are carried byte-identical in 2026-11-24-fe8ca-books-page-listing-the-catalog-with-navigation.md — read it, never a summary of it.
+done:
+- '`/books` renders the table, or the empty-state text when there are no books'
+- MainLayout shows Home and Books links on every page
+- '`dotnet build` has no warnings; existing tests still pass'
